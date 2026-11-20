@@ -296,7 +296,7 @@ All seven notebooks (data preparation, the five classifier notebooks, and final 
 - [x] Execute all seven notebooks in the BITS Virtual Lab environment.
 - [x] Capture BITS Virtual Lab execution screenshots for the preparation notebook, five classifiers, and final model comparison.
 - [x] Add the public GitHub repository URL to Section 3.
-- [ ] Prepare the single final submission PDF containing the GitHub repository link, BITS Virtual Lab execution screenshot evidence, and complete README content in the order required by the assignment.
+- [x] Prepare the single final submission PDF containing the GitHub repository link, BITS Virtual Lab execution screenshot evidence, and complete README content in the order required by the assignment.
 
 ## 9. References
 
