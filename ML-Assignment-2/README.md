@@ -57,7 +57,7 @@ The target is moderately imbalanced. The train-test split is stratified, and the
 
 ## 3. GitHub repository link
 
-Add the public GitHub repository URL here after creating the repository.
+[https://github.com/2026ct05092/ML/tree/main/ML-Assignment-2](https://github.com/2026ct05092/ML/tree/main/ML-Assignment-2)
 
 ## 4. Models and evaluation
 
@@ -77,14 +77,14 @@ Logistic Regression was executed using the common held-out test set. The six tes
 
 | Metric | Test result |
 |---|---:|
-| Accuracy | 0.7734 |
-| AUC | 0.8657 |
-| Precision (cancelled = 1) | 0.5595 |
-| Recall (cancelled = 1) | 0.8254 |
-| F1 Score (cancelled = 1) | 0.6669 |
-| MCC | 0.5266 |
+| Accuracy | 0.7728 |
+| AUC | 0.8656 |
+| Precision (cancelled = 1) | 0.5587 |
+| Recall (cancelled = 1) | 0.8256 |
+| F1 Score (cancelled = 1) | 0.6664 |
+| MCC | 0.5257 |
 
-The model used median imputation and standard scaling for numerical features, constant `Unknown` imputation and one-hot encoding for categorical features, and Logistic Regression with `C=1.0`, `solver='lbfgs'`, `max_iter=1500`, and `class_weight='balanced'`. The train–test accuracy gap was approximately 0.0030 and the AUC gap approximately 0.0032. These small gaps do not show a strong generalisation gap in these two metrics. The model has relatively high recall for cancelled bookings compared with precision, indicating that it catches many cancellations but also produces false-positive cancellation predictions. Its performance is a useful linear baseline for comparison.
+The model used median imputation and standard scaling for numerical features, constant `Unknown` imputation and one-hot encoding for categorical features, and Logistic Regression with `C=1.0`, `solver='lbfgs'`, `max_iter=1500`, and `class_weight='balanced'`. In the final BITS Virtual Lab run, the train–test accuracy gap was approximately 0.0035 and the AUC gap approximately 0.0030. These small gaps do not show a strong generalisation gap in these two metrics. The model has relatively high recall for cancelled bookings compared with precision, indicating that it catches many cancellations but also produces false-positive cancellation predictions. Its performance is a useful linear baseline for comparison.
 
 ### Experimental result – Decision Tree
 
@@ -138,28 +138,28 @@ The model's train–test accuracy gap is approximately 0.0061 and its AUC gap ap
 
 Random Forest was executed on the same 69,916-row training partition and 17,480-row held-out test partition. Numerical features were median-imputed; categorical features were imputed with `Unknown` and one-hot encoded. These transformations were fitted on the training partition only. Scaling was omitted because tree-based models do not require it. The classifier used 250 trees, `max_depth=20`, `min_samples_split=20`, `min_samples_leaf=5`, `max_features='sqrt'`, bootstrap sampling, `class_weight='balanced_subsample'`, and `random_state=42`. Predictions use the default 0.50 probability threshold; no threshold was tuned against the held-out test set.
 
-| Metric | Training | Test |
-|---|---:|---:|
-| Accuracy | 0.7928 | 0.7793 |
-| AUC | 0.9067 | 0.8887 |
-| Precision (cancelled = 1) | 0.5821 | 0.5659 |
-| Recall (cancelled = 1) | 0.8726 | 0.8472 |
-| F1 Score (cancelled = 1) | 0.6983 | 0.6786 |
-| MCC | 0.5761 | 0.5451 |
+| Metric | Final test result |
+|---|---:|
+| Accuracy | 0.7793 |
+| AUC | 0.8887 |
+| Precision (cancelled = 1) | 0.5659 |
+| Recall (cancelled = 1) | 0.8468 |
+| F1 Score (cancelled = 1) | 0.6784 |
+| MCC | 0.5449 |
 
-Random Forest currently has the highest AUC, F1 Score and MCC among the five evaluated models. It also has high cancellation recall, although Decision Tree's recall is slightly higher. KNN has the highest accuracy and precision. The Random Forest train–test accuracy gap is approximately 0.0134 and its AUC gap approximately 0.0180; these gaps are relatively small and do not show a large generalisation gap in these two measures. Its top impurity-based feature importances are recorded in `results/random_forest_feature_importances.csv` and visualised in `results/visualizations/random_forest_top_feature_importances.png`. Impurity-based importance is descriptive rather than causal and can favour high-cardinality features. Random Forest is selected as the overall winner for balanced performance because it leads on AUC, F1 and MCC while retaining high Recall. KNN remains the leader for Accuracy and Precision, and Decision Tree remains the leader for Recall; therefore, the winner depends on the operational objective.
+Random Forest currently has the highest AUC, F1 Score and MCC among the five evaluated models. It also has high cancellation recall, although Decision Tree's recall is slightly higher. KNN has the highest accuracy and precision. In the final BITS Virtual Lab run, the Random Forest train–test accuracy gap was approximately 0.0136 and its AUC gap approximately 0.0181; these gaps are relatively small and do not show a large generalisation gap in these two measures. Its top impurity-based feature importances are recorded in `results/random_forest_feature_importances.csv` and visualised in `results/visualizations/random_forest_top_feature_importances.png`. Impurity-based importance is descriptive rather than causal and can favour high-cardinality features. Random Forest is selected as the overall winner for balanced performance because it leads on AUC, F1 and MCC while retaining high Recall. KNN remains the leader for Accuracy and Precision, and Decision Tree remains the leader for Recall; therefore, the winner depends on the operational objective.
 
 ### Combined test-set comparison (all five models)
 
-The following table reports the six required metrics on the common held-out test set. Values are rounded to four decimal places; the unrounded values are retained in `results/model_comparison.csv`.
+The following table reports the six required metrics on the common held-out test set. Values are rounded to four decimal places; the unrounded values are retained in `results/model_comparison.csv`. These are the final BITS Virtual Lab execution results, not the earlier local baseline values.
 
 | Model | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---|---:|---:|---:|---:|---:|---:|
-| Logistic Regression | 0.7734 | 0.8657 | 0.5595 | 0.8254 | 0.6669 | 0.5266 |
+| Logistic Regression | 0.7728 | 0.8656 | 0.5587 | 0.8256 | 0.6664 | 0.5257 |
 | Decision Tree | 0.7656 | 0.8756 | 0.5463 | **0.8689** | 0.6708 | 0.5358 |
 | K-Nearest Neighbors | **0.8177** | 0.8709 | **0.6869** | 0.6191 | 0.6513 | 0.5297 |
 | Gaussian Naive Bayes | 0.7165 | 0.7697 | 0.4890 | 0.6957 | 0.5743 | 0.3844 |
-| Random Forest | 0.7793 | **0.8887** | 0.5659 | 0.8472 | **0.6786** | **0.5451** |
+| Random Forest | 0.7793 | **0.8887** | 0.5659 | 0.8468 | **0.6784** | **0.5449** |
 
 ### Metric visualisations
 
@@ -182,11 +182,11 @@ The graphs are reproducible using `notebooks/02_model_comparison.ipynb` or by ru
 
 | ML model | Observation about model performance |
 |---|---|
-| Logistic Regression | Provides a useful linear baseline with 82.54% Recall and 86.57% AUC. Its 55.95% Precision indicates a meaningful number of false-positive cancellation predictions. It balances a high cancellation recall with moderate accuracy. |
+| Logistic Regression | Provides a useful linear baseline with 82.56% Recall and 86.56% AUC. Its 55.87% Precision indicates a meaningful number of false-positive cancellation predictions. It balances a high cancellation recall with moderate accuracy. |
 | Decision Tree | Achieves the highest Recall (86.89%), so it catches the largest share of cancelled bookings. Its AUC, F1 and MCC are strong, but it has lower Accuracy and Precision than KNN and lower AUC, F1 and MCC than Random Forest. |
 | K-Nearest Neighbors | Achieves the highest Accuracy (81.77%) and Precision (68.69%), but its Recall is the lowest (61.91%). It is more conservative about predicting cancellations and therefore misses more actual cancellations. Its results are for the full preprocessing + SVD + KNN pipeline. |
 | Gaussian Naive Bayes | Has the lowest Accuracy, AUC, Precision, F1 and MCC among the five models. Its Recall (69.57%) is higher than KNN's but below the other three models. The threshold was selected using a validation slice from training data, not the held-out test set. |
-| Random Forest (Ensemble) | Achieves the highest AUC (88.87%), F1 (67.86%) and MCC (54.51%). Its Recall (84.72%) is also high, though slightly below Decision Tree. Accuracy and Precision are lower than KNN. Overall, it provides the strongest balance among the key ranking and classification metrics. |
+| Random Forest (Ensemble) | Achieves the highest AUC (88.87%), F1 (67.84%) and MCC (54.49%). Its Recall (84.68%) is also high, though slightly below Decision Tree. Accuracy and Precision are lower than KNN. Overall, it provides the strongest balance among the key ranking and classification metrics. |
 
 ### Overall winner for this dataset: Random Forest
 
@@ -238,7 +238,7 @@ ML-Assignment-2/
 └── .gitignore
 ```
 
-`train_data.csv` is included so all five model notebooks can use the exact same training partition. `test_data.csv` is the held-out 20% test partition required by the assignment and includes the `is_canceled` target column. Both files contain cleaned but not encoded/scaled data; model notebooks must use training-only preprocessing pipelines.
+`train_data.csv` is included so all five model notebooks can use the exact same training partition. `test_data.csv` is the held-out 20% test partition required by the assignment and includes the `is_canceled` target column. Both files contain cleaned but not encoded/scaled data; model notebooks must use training-only preprocessing pipelines. The five `.ipynb` files are the submitted model implementations. Serialized `.joblib` pipelines and JSON configurations under `model/artifacts/` are optional generated outputs; they are ignored by Git through `.gitignore` and do not need to be pushed for the stated repository structure.
 
 ## 6. Setup and execution
 
@@ -263,6 +263,10 @@ jupyter notebook
 Run `notebooks/01_data_preparation.ipynb` first. It creates the shared stratified 80:20 split using `random_state=42`, writes `data/train_data.csv` and `test_data.csv`, and saves EDA summaries and plots under `results/`.
 
 Then run the five notebooks in `model/`. Each model must load the same training and test CSV files. Fit imputers, encoders and scalers on training data only; apply the fitted transformations to test data without refitting. Keep the held-out test set separate from model fitting and tuning. The Naive Bayes notebook uses an additional stratified validation split from the training data to select `var_smoothing` and its decision threshold; it does not tune against the held-out test set. After all model notebooks have run, execute `notebooks/02_model_comparison.ipynb` or run `python scripts/generate_model_comparison.py` to refresh the six consolidated metric graphs from `results/model_comparison.csv`.
+
+### BITS Virtual Lab execution
+
+All seven notebooks (data preparation, the five classifier notebooks, and final model comparison) were executed in the BITS Virtual Lab browser-based development environment using the Python 3.12.7 kernel. The final held-out metrics shown in this README match `results/model_comparison.csv` and the consolidated comparison output captured during that execution. Screenshot evidence for the notebook runs and model comparison has been captured separately for the assignment submission PDF.
 
 ## 7. Reproducibility and leakage prevention
 
@@ -289,10 +293,10 @@ Then run the five notebooks in `model/`. Each model must load the same training 
 - [x] Generate the five-model comparison table in `results/model_comparison.csv` and add the measured results to this README.
 - [x] Generate one consolidated six-metric graph and six individual metric visualisations.
 - [x] Document each model's performance observations and explain the overall winner with metric trade-offs.
-- [ ] Capture the BITS Virtual Lab execution screenshot.
-- [ ] Add the public GitHub repository URL to Section 3.
-- [ ] Execute the project on BITS Virtual Lab and capture the required execution screenshot.
-- [ ] Include the repository link, BITS Virtual Lab screenshot and complete README content in the single submission PDF.
+- [x] Execute all seven notebooks in the BITS Virtual Lab environment.
+- [x] Capture BITS Virtual Lab execution screenshots for the preparation notebook, five classifiers, and final model comparison.
+- [x] Add the public GitHub repository URL to Section 3.
+- [ ] Prepare the single final submission PDF containing the GitHub repository link, BITS Virtual Lab execution screenshot evidence, and complete README content in the order required by the assignment.
 
 ## 9. References
 

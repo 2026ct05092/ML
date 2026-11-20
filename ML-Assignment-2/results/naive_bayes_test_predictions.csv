@@ -2144,7 +2144,7 @@ actual_is_canceled,predicted_is_canceled,predicted_probability_cancelled
 1,1,0.99481785
 0,0,0.92995024
 0,1,0.97781175
-0,0,0.73161
+0,0,0.73160446
 0,1,0.9931571
 0,0,0.7719564
 0,0,0.36979577
@@ -6917,7 +6917,7 @@ actual_is_canceled,predicted_is_canceled,predicted_probability_cancelled
 0,1,0.9771779
 0,0,0.9154559
 0,0,0.64705396
-0,0,0.93461627
+0,0,0.93461263
 1,0,0.05205632
 1,1,0.993354
 0,0,0.30404648
@@ -10991,7 +10991,7 @@ actual_is_canceled,predicted_is_canceled,predicted_probability_cancelled
 0,0,0.43218666
 0,0,0.43816277
 0,0,0.014127985
-0,0,0.7290692
+0,0,0.7290636
 1,1,0.98508996
 1,1,0.9999008
 0,1,0.9720547
@@ -11510,7 +11510,7 @@ actual_is_canceled,predicted_is_canceled,predicted_probability_cancelled
 0,1,0.99321765
 0,0,7.607448e-25
 0,0,9.763969e-13
-0,0,0.4210428
+0,0,0.4210396
 0,0,0.57920176
 1,1,0.9902366
 1,1,0.989006
@@ -16285,7 +16285,7 @@ actual_is_canceled,predicted_is_canceled,predicted_probability_cancelled
 1,1,0.98719656
 0,0,0.8112408
 0,0,0.085458495
-0,0,0.10640921
+0,0,0.106408395
 1,1,0.9838281
 0,1,0.992551
 1,0,0.17721754
