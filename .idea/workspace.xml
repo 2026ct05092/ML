@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d04d0635-4694-4f2e-9fe9-b635668f1158" name="Changes" comment="ML Assignment 2" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;2026ct05092&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/2026ct05092/ML.git&quot;,
+    &quot;accountId&quot;: &quot;41afa01f-0734-4356-9791-389135c6d046&quot;
+  }
+}</component>
+  <component name="KubernetesApiProvider">{}</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.5903507528994647" />
+      <entry key="MS500" value="3.2287613807311026" />
+      <entry key="S2" value="4.399376602412931" />
+      <entry key="S5" value="4.742686033774875" />
+      <entry key="S10" value="4.86832510153343" />
+      <entry key="S30" value="5.055153171556409" />
+      <entry key="S60" value="5.716753601841937" />
+      <entry key="M2" value="7.325666540410947" />
+      <entry key="M5" value="11.206425489294496" />
+      <entry key="M10" value="15.04001637583879" />
+      <entry key="M15" value="17.167124507049348" />
+      <entry key="M30" value="20.038998703677056" />
+      <entry key="H1" value="21.85567949685129" />
+      <entry key="H2" value="22.882743147095542" />
+      <entry key="H4" value="23.429529568336907" />
+      <entry key="D1" value="23.903226130996774" />
+      <entry key="W1" value="23.986132960471213" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.503019725720069" />
+      <entry key="MS500" value="3.1967439359363805" />
+      <entry key="S2" value="4.388869591205433" />
+      <entry key="S5" value="4.738191218446628" />
+      <entry key="S10" value="4.8660243185076" />
+      <entry key="S30" value="5.054361915867525" />
+      <entry key="S60" value="5.7163177309283455" />
+      <entry key="M2" value="7.325397868532844" />
+      <entry key="M5" value="11.206255909376338" />
+      <entry key="M10" value="15.039889073919998" />
+      <entry key="M15" value="17.167021234662236" />
+      <entry key="M30" value="20.038933518386163" />
+      <entry key="H1" value="21.85564234951384" />
+      <entry key="H2" value="22.882723246881284" />
+      <entry key="H4" value="23.42951925987246" />
+      <entry key="D1" value="23.903224360711185" />
+      <entry key="W1" value="23.986132706261735" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3MNR0Cabnn3GvzESwCu731MCfd5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ML" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ML" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-ac68fc9d2b05-intellij.indexing.shared.core-IU-263.7307.200" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d04d0635-4694-4f2e-9fe9-b635668f1158" name="Changes" comment="" />
+      <created>1795188814354</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1795188814354</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ML Assignment 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ML Assignment 2" />
+  </component>
+</project>

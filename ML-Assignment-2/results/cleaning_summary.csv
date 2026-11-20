@@ -1,0 +1,4 @@
+step,rows,columns_including_target,decision
+Original rows,119390,32,Original downloaded dataset
+After exact duplicate removal,87396,32,Removed exact duplicate rows
+Final modelling table,87396,29,Excluded two leakage fields and sparse company field
